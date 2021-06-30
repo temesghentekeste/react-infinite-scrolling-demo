@@ -2,7 +2,13 @@
 function App() {
   return (
     <div>
-     <h1>Infinte Scrolling</h1>
+     <input type="text" />
+     <div>Title</div>
+     <div>Title</div>
+     <div>Title</div>
+     <div>Title</div>
+     <div>Loading...</div>
+     <div>Error</div>
     </div>
   );
 }
