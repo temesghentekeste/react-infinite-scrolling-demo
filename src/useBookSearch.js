@@ -8,6 +8,10 @@ const useBookSearch = (query, pageNumber) => {
     const [books, setBooks] = useState([])
     const [hasMore, setHasMore] = useState(false)
 
+    useEffect(() => {
+        setBooks([])
+    }, [query])
+
     const url = `http://openlibrary.org/search.json?q=${query}&page=${pageNumber}`
     useEffect(() => {
         setLoading(true)
